@@ -43,11 +43,19 @@ Het bereik van een draadloze verbinding wordt in grote mate beperkt door de Free
     \item Deze antenne straalt het signaal in alle richtingen met gelijke sterkte uit.
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.8]{FSPL.png}
-    \caption{FSPL Formule.}
-    \end{figure}
+De Free Space Path Loss (FSPL) formule is gegeven door:
+
+\begin{equation}
+\text{FSPL(dB)} = 20 \log_{10}(d) + 20 \log_{10}(f) + 20 \log_{10}\left(\frac{4\pi}{c}\right)
+\end{equation}
+
+waarbij:
+\begin{align*}
+&\text{FSPL(dB)} \text{ is de Free Space Path Loss in decibels} \\
+&d \text{ is de afstand tussen de zender en ontvanger in meters} \\
+&f \text{ is de frequentie van het signaal in hertz} \\
+&c \text{ is de snelheid van het licht in meters per seconde}
+\end{align*}
 
 Wat is de FSPL(dB) voor een frequentie van 434 MHz en van 868 MHz op bijv. een afstand van 500 meter?\\
 Wat valt je op aan het antwoord?\\
