@@ -10,4 +10,17 @@ Hierboven is ons schema en opstelling te zienbla bla bla.
 
 
 
-\subsection{}
+\subsection{software}
+De software is geschreven in STMcube IDE. Met gebruik van de STM32F4xx HAL library.
+Voor de aansturing van onze boost converter zijn twee pwm signalen nodig.
+Deze pwms moeten het geinverteerde signaal van elkaar zijn.
+Dit is gedaan door gebruik te maken van de timer 1 en timer 8.
+Deze timers zijn gekoppeld aan de pwm pins van de microcontroller.
+De duty cycle wordt geregeld door een PI controller.
+De PI controller krijgt zijn actual data van de ADC.
+Deze ADC is gekoppeld aan de output van de boost converter.
+Om de ADC data te kunnen gebruiken wordt er een moving average filter op toegepast.
+Deze filter is geimplementeerd met een array van X elementen.
+De frequentie van de PWM signalen is instelbaar met de knopjes op de stm.
+
+
